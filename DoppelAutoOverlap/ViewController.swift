@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var image2: UIImageView!
     
-    
+    var r:CGFloat = 1
     
     func TintRed(chooseImage: UIImageView) {
     
@@ -47,11 +47,40 @@ class ViewController: UIViewController {
         chooseImage.tintColor = UIColor.blue
         
         
+        
     }
 
     func TintPurple() {
         let imageView = UIImageView(image: UIImage(named: "image1"))
         imageView.setImageColor(color: UIColor.purple)
+    }
+    
+    
+    func RGB(chooseImage: UIImageView, r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) {
+        // filter logic
+        
+        var context = CIContext(options: nil)
+        
+        let currentFilter = CIFilter(name: "CIColorMatrix")
+        //var r:CGFloat = 1
+        //var g:CGFloat = 0
+        //var b:CGFloat = 1
+        //var a:CGFloat = 1
+    
+        
+        
+        //tintColor.getRed(&r, green:&g, blue:&b, alpha:&a)
+        
+        currentFilter!.setValue(CIImage(image: chooseImage.image!), forKey: "inputImage")
+        currentFilter!.setValue(CIVector(x:r, y:0, z:0, w:0), forKey:"inputRVector")
+        currentFilter!.setValue(CIVector(x:0, y:g, z:0, w:0), forKey:"inputGVector")
+        currentFilter!.setValue(CIVector(x:0, y:0, z:b, w:0), forKey:"inputBVector")
+        currentFilter!.setValue(CIVector(x:0, y:0, z:0, w:a), forKey:"inputAVector")
+        
+        let output = currentFilter!.outputImage
+        let cgimg = context.createCGImage(output!,from: output!.extent)
+        let processedImage = UIImage(cgImage: cgimg!)
+        chooseImage.image = processedImage
     }
     
     override func viewDidLoad() {
@@ -60,7 +89,9 @@ class ViewController: UIViewController {
         
         TintRed(chooseImage: image1)
         //TintBlue(chooseImage: image2)
-        TintPurple()
+        RGB(chooseImage: image1, r:1, g:0, b:0, a:1.0)
+        RGB(chooseImage: image2, r:0, g:0, b:1, a:1.0)
+        //TintPurple()
         
         
         
