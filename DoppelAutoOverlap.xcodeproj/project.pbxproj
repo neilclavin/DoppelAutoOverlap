@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		286343CB21A1B8E1000FAD0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286343CA21A1B8E1000FAD0E /* AppDelegate.swift */; };
+		286343CD21A1B8E1000FAD0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286343CC21A1B8E1000FAD0E /* ViewController.swift */; };
+		286343D021A1B8E1000FAD0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286343CE21A1B8E1000FAD0E /* Main.storyboard */; };
+		286343D221A1B8E5000FAD0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286343D121A1B8E5000FAD0E /* Assets.xcassets */; };
+		286343D521A1B8E5000FAD0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286343D321A1B8E5000FAD0E /* LaunchScreen.storyboard */; };
+		286343E021A1B8E5000FAD0E /* DoppelAutoOverlapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286343DF21A1B8E5000FAD0E /* DoppelAutoOverlapTests.swift */; };
+		286343EB21A1B8E5000FAD0E /* DoppelAutoOverlapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286343EA21A1B8E5000FAD0E /* DoppelAutoOverlapUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		286343DC21A1B8E5000FAD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 286343BF21A1B8E1000FAD0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 286343C621A1B8E1000FAD0E;
+			remoteInfo = DoppelAutoOverlap;
+		};
+		286343E721A1B8E5000FAD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 286343BF21A1B8E1000FAD0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 286343C621A1B8E1000FAD0E;
+			remoteInfo = DoppelAutoOverlap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		286343C721A1B8E1000FAD0E /* DoppelAutoOverlap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoppelAutoOverlap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		286343CA21A1B8E1000FAD0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		286343CC21A1B8E1000FAD0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		286343CF21A1B8E1000FAD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		286343D121A1B8E5000FAD0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		286343D421A1B8E5000FAD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		286343D621A1B8E5000FAD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		286343DB21A1B8E5000FAD0E /* DoppelAutoOverlapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoppelAutoOverlapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		286343DF21A1B8E5000FAD0E /* DoppelAutoOverlapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoppelAutoOverlapTests.swift; sourceTree = "<group>"; };
+		286343E121A1B8E5000FAD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		286343E621A1B8E5000FAD0E /* DoppelAutoOverlapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoppelAutoOverlapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		286343EA21A1B8E5000FAD0E /* DoppelAutoOverlapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoppelAutoOverlapUITests.swift; sourceTree = "<group>"; };
+		286343EC21A1B8E5000FAD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		286343C421A1B8E1000FAD0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286343D821A1B8E5000FAD0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286343E321A1B8E5000FAD0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		286343BE21A1B8E1000FAD0E = {
+			isa = PBXGroup;
+			children = (
+				286343C921A1B8E1000FAD0E /* DoppelAutoOverlap */,
+				286343DE21A1B8E5000FAD0E /* DoppelAutoOverlapTests */,
+				286343E921A1B8E5000FAD0E /* DoppelAutoOverlapUITests */,
+				286343C821A1B8E1000FAD0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		286343C821A1B8E1000FAD0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				286343C721A1B8E1000FAD0E /* DoppelAutoOverlap.app */,
+				286343DB21A1B8E5000FAD0E /* DoppelAutoOverlapTests.xctest */,
+				286343E621A1B8E5000FAD0E /* DoppelAutoOverlapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		286343C921A1B8E1000FAD0E /* DoppelAutoOverlap */ = {
+			isa = PBXGroup;
+			children = (
+				286343CA21A1B8E1000FAD0E /* AppDelegate.swift */,
+				286343CC21A1B8E1000FAD0E /* ViewController.swift */,
+				286343CE21A1B8E1000FAD0E /* Main.storyboard */,
+				286343D121A1B8E5000FAD0E /* Assets.xcassets */,
+				286343D321A1B8E5000FAD0E /* LaunchScreen.storyboard */,
+				286343D621A1B8E5000FAD0E /* Info.plist */,
+			);
+			path = DoppelAutoOverlap;
+			sourceTree = "<group>";
+		};
+		286343DE21A1B8E5000FAD0E /* DoppelAutoOverlapTests */ = {
+			isa = PBXGroup;
+			children = (
+				286343DF21A1B8E5000FAD0E /* DoppelAutoOverlapTests.swift */,
+				286343E121A1B8E5000FAD0E /* Info.plist */,
+			);
+			path = DoppelAutoOverlapTests;
+			sourceTree = "<group>";
+		};
+		286343E921A1B8E5000FAD0E /* DoppelAutoOverlapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				286343EA21A1B8E5000FAD0E /* DoppelAutoOverlapUITests.swift */,
+				286343EC21A1B8E5000FAD0E /* Info.plist */,
+			);
+			path = DoppelAutoOverlapUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		286343C621A1B8E1000FAD0E /* DoppelAutoOverlap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 286343EF21A1B8E5000FAD0E /* Build configuration list for PBXNativeTarget "DoppelAutoOverlap" */;
+			buildPhases = (
+				286343C321A1B8E1000FAD0E /* Sources */,
+				286343C421A1B8E1000FAD0E /* Frameworks */,
+				286343C521A1B8E1000FAD0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoppelAutoOverlap;
+			productName = DoppelAutoOverlap;
+			productReference = 286343C721A1B8E1000FAD0E /* DoppelAutoOverlap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		286343DA21A1B8E5000FAD0E /* DoppelAutoOverlapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 286343F221A1B8E5000FAD0E /* Build configuration list for PBXNativeTarget "DoppelAutoOverlapTests" */;
+			buildPhases = (
+				286343D721A1B8E5000FAD0E /* Sources */,
+				286343D821A1B8E5000FAD0E /* Frameworks */,
+				286343D921A1B8E5000FAD0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				286343DD21A1B8E5000FAD0E /* PBXTargetDependency */,
+			);
+			name = DoppelAutoOverlapTests;
+			productName = DoppelAutoOverlapTests;
+			productReference = 286343DB21A1B8E5000FAD0E /* DoppelAutoOverlapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		286343E521A1B8E5000FAD0E /* DoppelAutoOverlapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 286343F521A1B8E5000FAD0E /* Build configuration list for PBXNativeTarget "DoppelAutoOverlapUITests" */;
+			buildPhases = (
+				286343E221A1B8E5000FAD0E /* Sources */,
+				286343E321A1B8E5000FAD0E /* Frameworks */,
+				286343E421A1B8E5000FAD0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				286343E821A1B8E5000FAD0E /* PBXTargetDependency */,
+			);
+			name = DoppelAutoOverlapUITests;
+			productName = DoppelAutoOverlapUITests;
+			productReference = 286343E621A1B8E5000FAD0E /* DoppelAutoOverlapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		286343BF21A1B8E1000FAD0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Neil Clavin";
+				TargetAttributes = {
+					286343C621A1B8E1000FAD0E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					286343DA21A1B8E5000FAD0E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 286343C621A1B8E1000FAD0E;
+					};
+					286343E521A1B8E5000FAD0E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 286343C621A1B8E1000FAD0E;
+					};
+				};
+			};
+			buildConfigurationList = 286343C221A1B8E1000FAD0E /* Build configuration list for PBXProject "DoppelAutoOverlap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 286343BE21A1B8E1000FAD0E;
+			productRefGroup = 286343C821A1B8E1000FAD0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				286343C621A1B8E1000FAD0E /* DoppelAutoOverlap */,
+				286343DA21A1B8E5000FAD0E /* DoppelAutoOverlapTests */,
+				286343E521A1B8E5000FAD0E /* DoppelAutoOverlapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		286343C521A1B8E1000FAD0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286343D521A1B8E5000FAD0E /* LaunchScreen.storyboard in Resources */,
+				286343D221A1B8E5000FAD0E /* Assets.xcassets in Resources */,
+				286343D021A1B8E1000FAD0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286343D921A1B8E5000FAD0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286343E421A1B8E5000FAD0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		286343C321A1B8E1000FAD0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286343CD21A1B8E1000FAD0E /* ViewController.swift in Sources */,
+				286343CB21A1B8E1000FAD0E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286343D721A1B8E5000FAD0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286343E021A1B8E5000FAD0E /* DoppelAutoOverlapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286343E221A1B8E5000FAD0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286343EB21A1B8E5000FAD0E /* DoppelAutoOverlapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		286343DD21A1B8E5000FAD0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 286343C621A1B8E1000FAD0E /* DoppelAutoOverlap */;
+			targetProxy = 286343DC21A1B8E5000FAD0E /* PBXContainerItemProxy */;
+		};
+		286343E821A1B8E5000FAD0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 286343C621A1B8E1000FAD0E /* DoppelAutoOverlap */;
+			targetProxy = 286343E721A1B8E5000FAD0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		286343CE21A1B8E1000FAD0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286343CF21A1B8E1000FAD0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		286343D321A1B8E5000FAD0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286343D421A1B8E5000FAD0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		286343ED21A1B8E5000FAD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		286343EE21A1B8E5000FAD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		286343F021A1B8E5000FAD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YB579LW73;
+				INFOPLIST_FILE = DoppelAutoOverlap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NC.DoppelAutoOverlap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		286343F121A1B8E5000FAD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YB579LW73;
+				INFOPLIST_FILE = DoppelAutoOverlap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NC.DoppelAutoOverlap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		286343F321A1B8E5000FAD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YB579LW73;
+				INFOPLIST_FILE = DoppelAutoOverlapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NC.DoppelAutoOverlapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoppelAutoOverlap.app/DoppelAutoOverlap";
+			};
+			name = Debug;
+		};
+		286343F421A1B8E5000FAD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YB579LW73;
+				INFOPLIST_FILE = DoppelAutoOverlapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NC.DoppelAutoOverlapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoppelAutoOverlap.app/DoppelAutoOverlap";
+			};
+			name = Release;
+		};
+		286343F621A1B8E5000FAD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YB579LW73;
+				INFOPLIST_FILE = DoppelAutoOverlapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NC.DoppelAutoOverlapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoppelAutoOverlap;
+			};
+			name = Debug;
+		};
+		286343F721A1B8E5000FAD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YB579LW73;
+				INFOPLIST_FILE = DoppelAutoOverlapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NC.DoppelAutoOverlapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoppelAutoOverlap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		286343C221A1B8E1000FAD0E /* Build configuration list for PBXProject "DoppelAutoOverlap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286343ED21A1B8E5000FAD0E /* Debug */,
+				286343EE21A1B8E5000FAD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		286343EF21A1B8E5000FAD0E /* Build configuration list for PBXNativeTarget "DoppelAutoOverlap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286343F021A1B8E5000FAD0E /* Debug */,
+				286343F121A1B8E5000FAD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		286343F221A1B8E5000FAD0E /* Build configuration list for PBXNativeTarget "DoppelAutoOverlapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286343F321A1B8E5000FAD0E /* Debug */,
+				286343F421A1B8E5000FAD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		286343F521A1B8E5000FAD0E /* Build configuration list for PBXNativeTarget "DoppelAutoOverlapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286343F621A1B8E5000FAD0E /* Debug */,
+				286343F721A1B8E5000FAD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 286343BF21A1B8E1000FAD0E /* Project object */;
+}
