@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="luca1" translatesAutoresizingMaskIntoConstraints="NO" id="Jjn-5w-835">
-                                <rect key="frame" x="0.0" y="45" width="230" height="310"/>
+                                <rect key="frame" x="0.0" y="45" width="230" height="308"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="luca2" translatesAutoresizingMaskIntoConstraints="NO" id="XZ8-dg-U17">
-                                <rect key="frame" x="145" y="45" width="230" height="310"/>
+                                <rect key="frame" x="0.0" y="44" width="228" height="309"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>

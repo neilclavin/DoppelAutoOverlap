@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var image2: UIImageView!
     
-    var r:CGFloat = 1
+    var context = CIContext(options: nil)
     
     func TintRed(chooseImage: UIImageView) {
     
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     func RGB(chooseImage: UIImageView, r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) {
         // filter logic
         
-        var context = CIContext(options: nil)
+        
         
         let currentFilter = CIFilter(name: "CIColorMatrix")
         //var r:CGFloat = 1
@@ -81,6 +81,20 @@ class ViewController: UIViewController {
         let cgimg = context.createCGImage(output!,from: output!.extent)
         let processedImage = UIImage(cgImage: cgimg!)
         chooseImage.image = processedImage
+        Blend(chooseImage: chooseImage)
+    }
+    
+    func Blend(chooseImage: UIImageView) {
+        // filter logic
+        
+        let currentFilter = CIFilter(name: "CIScreenBlendMode")
+        
+        
+        currentFilter!.setValue(CIImage(image: chooseImage.image!), forKey: kCIInputImageKey)
+        let output = currentFilter!.outputImage
+        let cgimg = context.createCGImage(output!,from: output!.extent)
+        let processedImage = UIImage(cgImage: cgimg!)
+        chooseImage.image = processedImage
     }
     
     override func viewDidLoad() {
@@ -89,8 +103,8 @@ class ViewController: UIViewController {
         
         TintRed(chooseImage: image1)
         //TintBlue(chooseImage: image2)
-        RGB(chooseImage: image1, r:1, g:0, b:0, a:1.0)
-        RGB(chooseImage: image2, r:0, g:0, b:1, a:1.0)
+        RGB(chooseImage: image1, r:1, g:0, b:0, a:0.5)
+        RGB(chooseImage: image2, r:0, g:0, b:1, a:0.5)
         //TintPurple()
         
         
